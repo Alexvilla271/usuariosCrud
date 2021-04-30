@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ver Usuarios</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <!--Sección de la barra de navegación-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mostrar usuarios</a>
+    </div>
+  </nav>
+  <ul class="nav nav-tabs">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+        aria-expanded="false">C R U D</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="agregar.html">Añadir Usuario</a>
+        <a class="dropdown-item" href="ver.html">Mostrar Usuarios</a>
+        <a class="dropdown-item" href="modificar.html">Modificar Usuario</a>
+        <a class="dropdown-item" href="eliminar.html">Eliminar Usuario</a>
+    </li>
+  </ul>
+
+  <form>
+    <!--Conversor 1
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-warning" value="Hacer petición" onclick="verUsuario()">VerUsuarios</button>
+          <p id="demo"></p>
+        </div>
+      </div>
+    </div>-->
+
+
+    <!--Conversor 1-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h2>Mostrar Usuario</h2>
+          </div>
+          <p>Ingresa el ID de el Usuario a mostrar</p>
+          <form>
+            <div class="form-group">
+              <label for="Id">ID </label>
+              <input id="Id" type="number" class="form-control">
+            </div>
+            <br>
+            <button type="button" class="btn btn-warning" value="Hacer petición" onclick="verUsuario()">Ver Usuarios</button>
+          </form>
+          <div lass="col-md-12" id="myData"></div>
+          <script src="ver.js"></script>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script src="ver.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

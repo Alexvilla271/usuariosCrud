@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://tell.me/usuarios" 
+    xmlns:tns="http://tell.me" elementFormDefault="qualified">
+
+    <element name="AnadirUsuarioRequest">
+        <complexType>
+            <sequence>
+                <element name="nombre" type="string"></element>
+                <element name="tipo" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="AnadirUsuarioResponse">
+        <complexType>
+            <sequence>
+                <element name="respuesta" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+    <element name="BusquedaUsuarioRequest">
+        <complexType>
+
+        </complexType>
+    </element>
+    <element name="BusquedaUsuarioResponse">
+        <complexType >
+            <sequence>
+                <element name="notificacion" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="id" type="int"></element>
+                            <element name="nombre" type="string"></element>
+                            <element name="tipo" type="string"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="ModificarUsuarioRequest">
+        <complexType>
+            <sequence>
+                <element name="id" type="int"></element>
+                <element name="nombre" type="string"></element>
+                <element name="tipo" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="ModificarUsuarioResponse">
+        <complexType>
+            <sequence>
+                <element name="respuesta" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="EliminarUsuarioRequest">
+        <complexType>
+            <sequence>
+                <element name="id" type="int"></element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="EliminarUsuarioResponse">
+        <complexType>
+            <sequence>
+                <element name="respuesta" type="string"></element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
